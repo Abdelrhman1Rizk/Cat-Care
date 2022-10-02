@@ -786,13 +786,20 @@ body {
 .ourBlog .boxes .box .text .reacts{
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
     gap: 45px;
     font-size: 22px;
 }
+
 .ourBlog .boxes .box .text .reacts > span{
     display: flex;
     align-items: center;
     gap: 15px;
+}
+@media (max-width:767px) {
+    .ourBlog .boxes .box .text .reacts > span span:nth-of-type(1){
+        display: none;
+    }
 }
 .ourBlog .boxes .box .blogImg img{
     max-width: 100%;
